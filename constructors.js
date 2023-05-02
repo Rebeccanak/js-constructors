@@ -48,3 +48,18 @@ class Rental{
 let rental= new Rental;(`Toyota`,`Discovery`,2019,`False`,`Automack`,new Date(`2022-07-12`),new Date(`2022-07-20`));
 let durationOfRental=rental.calculateRentalDuration();
 console.log(durationOfRental)
+
+
+class Quiz {
+    constructor(questions) {
+      this.questions = questions;
+      this.score = 0;
+      this.currentQuestionIndex = 0;
+    }
+  
+    getCurrentQuestion() {
+      return this.questions[this.currentQuestionIndex];
+    }
+    
+
+    }
