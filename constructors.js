@@ -49,6 +49,20 @@ let rental= new Rental;(`Toyota`,`Discovery`,2019,`False`,`Automack`,new Date(`2
 let durationOfRental=rental.calculateRentalDuration();
 console.log(durationOfRental)
 
+//Question2
+
+class Question {
+    constructor(text, options, correctAnswer) {
+      this.text = text;
+      this.options = options;
+      this.correctAnswer = correctAnswer;
+    }
+  
+    checkAnswer(userAnswer) {
+      return userAnswer === this.correctAnswer;
+    }
+  }
+
 
 class Quiz {
     constructor(questions) {
